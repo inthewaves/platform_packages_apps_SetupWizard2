@@ -18,6 +18,7 @@ import app.grapheneos.setupwizard.view.activity.LocationActivity
 import app.grapheneos.setupwizard.view.activity.MigrationActivity
 import app.grapheneos.setupwizard.view.activity.SecurityActivity
 import app.grapheneos.setupwizard.view.activity.SetupWizardActivity
+import app.grapheneos.setupwizard.view.activity.UpdaterSecurityPreviewActivity
 import app.grapheneos.setupwizard.view.activity.WelcomeActivity
 import app.grapheneos.setupwizard.view.activity.WifiActivity
 
@@ -28,6 +29,7 @@ object SetupWizard {
     // which means the launching of next activity will be a pure function
     private val primaryUserActivities = listOf<Class<out Activity>>(
         WelcomeActivity::class.java,
+        UpdaterSecurityPreviewActivity::class.java,
         WifiActivity::class.java,
         DateTimeActivity::class.java,
         LocationActivity::class.java,
