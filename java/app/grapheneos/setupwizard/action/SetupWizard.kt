@@ -29,11 +29,11 @@ object SetupWizard {
     // which means the launching of next activity will be a pure function
     private val primaryUserActivities = listOf<Class<out Activity>>(
         WelcomeActivity::class.java,
-        UpdaterSecurityPreviewActivity::class.java,
         WifiActivity::class.java,
         DateTimeActivity::class.java,
         LocationActivity::class.java,
         SecurityActivity::class.java,
+        UpdaterSecurityPreviewActivity::class.java,
         MigrationActivity::class.java,
         GesturesActivity::class.java,
         FinishActivity::class.java
